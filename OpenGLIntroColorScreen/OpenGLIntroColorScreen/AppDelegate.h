@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppDelegate.h
 //  OpenGLIntroSingleTriangle
 //
 //  Created by Streetwizard on 11/30/14.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@import GLKit;
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@interface ViewController : GLKViewController
+@property (strong, nonatomic) UIWindow *window;
+
 
 @end
+

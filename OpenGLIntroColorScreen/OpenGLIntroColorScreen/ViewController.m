@@ -9,22 +9,21 @@
 #import "ViewController.h"
 #import "Vertex.h"
 #import "BaseEffect.h"
-#import "RainbowColor.h"
-#import "Terrain.h"
+#import "Square.h"
 
-#define hillsKeyPointsNumber 10
-#define hillsVertices (hillsKeyPointsNumber * 2)
+@interface ViewController ()
+@end
 
 @implementation ViewController
 {
-    BaseEffect *_shader;
-    Terrain* _terrain;
+    BaseEffect* _shader;
+    Square* _square;
 }
 
 - (void)setupScene
 {
     _shader = [[BaseEffect alloc] initWithVertexShader:@"SimpleVertex.glsl" fragmentShader:@"SimpleFragment.glsl"];
-    _terrain = [[Terrain alloc]initWithShader:_shader rectangle:CGRectMake(-1, -1, 2, 2)];
+    _square = [[Square alloc]initWithShader:_shader];
 }
 
 - (void)viewDidLoad
@@ -43,7 +42,7 @@
     glClearColor(0, 104.0/255.0, 55.0/255.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     
-    [_terrain render];
+    [_square renderModel];
 }
 
 @end

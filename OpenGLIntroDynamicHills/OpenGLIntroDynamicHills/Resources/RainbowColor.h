@@ -8,9 +8,4 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RainbowColor : NSObject
-
-//void getRainbowColor(float x, float * r, float * g, float * b);
--(void)getRainbowColorX:(float)x R:(float)r G:(float)g B:(float)b;
-
-@end
+void getRainbowColor(float x, float * r, float * g, float * b);

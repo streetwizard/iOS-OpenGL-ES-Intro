@@ -13,12 +13,12 @@
 		4906928B1A2BD6C700F2AF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490692891A2BD6C700F2AF08 /* Main.storyboard */; };
 		4906928D1A2BD6C700F2AF08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4906928C1A2BD6C700F2AF08 /* Images.xcassets */; };
 		490692901A2BD6C700F2AF08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4906928E1A2BD6C700F2AF08 /* LaunchScreen.xib */; };
-		4906929C1A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4906929B1A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests.m */; };
+		4906929C1A2BD6C700F2AF08 /* OpenGLIntroColorScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4906929B1A2BD6C700F2AF08 /* OpenGLIntroColorScreenTests.m */; };
 		490692AB1A2BD74600F2AF08 /* BaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 490692A71A2BD74600F2AF08 /* BaseEffect.m */; };
 		490692AC1A2BD74600F2AF08 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 490692A81A2BD74600F2AF08 /* SimpleFragment.glsl */; };
 		490692AD1A2BD74600F2AF08 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 490692A91A2BD74600F2AF08 /* SimpleVertex.glsl */; };
-		493C1F3E1A353E8C006D775A /* RainbowColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 493C1F3C1A353E8C006D775A /* RainbowColor.m */; };
-		4963B2071A5360F3002C46C1 /* Terrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4963B2061A5360F3002C46C1 /* Terrain.m */; };
+		4963B1FE1A533972002C46C1 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 4963B1FD1A533972002C46C1 /* Model.m */; };
+		4963B2021A53521E002C46C1 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 4963B2011A53521E002C46C1 /* Square.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4906927C1A2BD6C700F2AF08 /* OpenGLIntroDynamicHills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLIntroDynamicHills.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4906927C1A2BD6C700F2AF08 /* OpenGLIntroColorScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLIntroColorScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		490692801A2BD6C700F2AF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		490692811A2BD6C700F2AF08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		490692831A2BD6C700F2AF08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,18 +42,18 @@
 		4906928A1A2BD6C700F2AF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4906928C1A2BD6C700F2AF08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4906928F1A2BD6C700F2AF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		490692951A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLIntroDynamicHillsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		490692951A2BD6C700F2AF08 /* OpenGLIntroColorScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLIntroColorScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4906929A1A2BD6C700F2AF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4906929B1A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLIntroDynamicHillsTests.m; sourceTree = "<group>"; };
+		4906929B1A2BD6C700F2AF08 /* OpenGLIntroColorScreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLIntroColorScreenTests.m; sourceTree = "<group>"; };
 		490692A61A2BD74600F2AF08 /* BaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEffect.h; sourceTree = "<group>"; };
 		490692A71A2BD74600F2AF08 /* BaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEffect.m; sourceTree = "<group>"; };
 		490692A81A2BD74600F2AF08 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
 		490692A91A2BD74600F2AF08 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
-		490692AA1A2BD74600F2AF08 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
-		493C1F3C1A353E8C006D775A /* RainbowColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainbowColor.m; sourceTree = "<group>"; };
-		493C1F3D1A353E8C006D775A /* RainbowColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainbowColor.h; sourceTree = "<group>"; };
-		4963B2051A5360F3002C46C1 /* Terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terrain.h; sourceTree = "<group>"; };
-		4963B2061A5360F3002C46C1 /* Terrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Terrain.m; sourceTree = "<group>"; };
+		4963B1FC1A533972002C46C1 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		4963B1FD1A533972002C46C1 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		4963B2001A53521E002C46C1 /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		4963B2011A53521E002C46C1 /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		4963B2031A535DE0002C46C1 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 		490692731A2BD6C700F2AF08 = {
 			isa = PBXGroup;
 			children = (
-				4906927E1A2BD6C700F2AF08 /* OpenGLIntroDynamicHills */,
+				4906927E1A2BD6C700F2AF08 /* OpenGLIntroColorScreen */,
 				490692981A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests */,
 				4906927D1A2BD6C700F2AF08 /* Products */,
 			);
@@ -86,16 +86,16 @@
 		4906927D1A2BD6C700F2AF08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4906927C1A2BD6C700F2AF08 /* OpenGLIntroDynamicHills.app */,
-				490692951A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests.xctest */,
+				4906927C1A2BD6C700F2AF08 /* OpenGLIntroColorScreen.app */,
+				490692951A2BD6C700F2AF08 /* OpenGLIntroColorScreenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4906927E1A2BD6C700F2AF08 /* OpenGLIntroDynamicHills */ = {
+		4906927E1A2BD6C700F2AF08 /* OpenGLIntroColorScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4963B2041A5360AF002C46C1 /* Model */,
+				4963B1FF1A5351F8002C46C1 /* Model */,
 				490692A51A2BD74600F2AF08 /* Resources */,
 				490692831A2BD6C700F2AF08 /* AppDelegate.h */,
 				490692841A2BD6C700F2AF08 /* AppDelegate.m */,
@@ -106,8 +106,8 @@
 				4906928E1A2BD6C700F2AF08 /* LaunchScreen.xib */,
 				4906927F1A2BD6C700F2AF08 /* Supporting Files */,
 			);
-			path = OpenGLIntroDynamicHills;
-			sourceTree = "<group>";
+			path = OpenGLIntroColorScreen;
+			sourceTree = SOURCE_ROOT;
 		};
 		4906927F1A2BD6C700F2AF08 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -121,10 +121,11 @@
 		490692981A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests */ = {
 			isa = PBXGroup;
 			children = (
-				4906929B1A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests.m */,
+				4906929B1A2BD6C700F2AF08 /* OpenGLIntroColorScreenTests.m */,
 				490692991A2BD6C700F2AF08 /* Supporting Files */,
 			);
-			path = OpenGLIntroDynamicHillsTests;
+			name = OpenGLIntroDynamicHillsTests;
+			path = OpenGLIntroColorScreenTests;
 			sourceTree = "<group>";
 		};
 		490692991A2BD6C700F2AF08 /* Supporting Files */ = {
@@ -138,32 +139,33 @@
 		490692A51A2BD74600F2AF08 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				493C1F3D1A353E8C006D775A /* RainbowColor.h */,
-				493C1F3C1A353E8C006D775A /* RainbowColor.m */,
 				490692A61A2BD74600F2AF08 /* BaseEffect.h */,
 				490692A71A2BD74600F2AF08 /* BaseEffect.m */,
 				490692A81A2BD74600F2AF08 /* SimpleFragment.glsl */,
 				490692A91A2BD74600F2AF08 /* SimpleVertex.glsl */,
-				490692AA1A2BD74600F2AF08 /* Vertex.h */,
+				4963B2031A535DE0002C46C1 /* Vertex.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4963B2041A5360AF002C46C1 /* Model */ = {
+		4963B1FF1A5351F8002C46C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4963B2051A5360F3002C46C1 /* Terrain.h */,
-				4963B2061A5360F3002C46C1 /* Terrain.m */,
+				4963B1FC1A533972002C46C1 /* Model.h */,
+				4963B1FD1A533972002C46C1 /* Model.m */,
+				4963B2001A53521E002C46C1 /* Square.h */,
+				4963B2011A53521E002C46C1 /* Square.m */,
 			);
 			name = Model;
-			sourceTree = "<group>";
+			path = "/Users/Streetwizard/Documents/WizArt Interactive Workspace/OpenGL ES Intro/OpenGLIntroColorScreen/OpenGLIntroColorScreen";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4906927B1A2BD6C700F2AF08 /* OpenGLIntroDynamicHills */ = {
+		4906927B1A2BD6C700F2AF08 /* OpenGLIntroColorScreen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4906929F1A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroDynamicHills" */;
+			buildConfigurationList = 4906929F1A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroColorScreen" */;
 			buildPhases = (
 				490692781A2BD6C700F2AF08 /* Sources */,
 				490692791A2BD6C700F2AF08 /* Frameworks */,
@@ -173,14 +175,14 @@
 			);
 			dependencies = (
 			);
-			name = OpenGLIntroDynamicHills;
+			name = OpenGLIntroColorScreen;
 			productName = OpenGLIntroSingleTriangle;
-			productReference = 4906927C1A2BD6C700F2AF08 /* OpenGLIntroDynamicHills.app */;
+			productReference = 4906927C1A2BD6C700F2AF08 /* OpenGLIntroColorScreen.app */;
 			productType = "com.apple.product-type.application";
 		};
-		490692941A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests */ = {
+		490692941A2BD6C700F2AF08 /* OpenGLIntroColorScreenTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 490692A21A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroDynamicHillsTests" */;
+			buildConfigurationList = 490692A21A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroColorScreenTests" */;
 			buildPhases = (
 				490692911A2BD6C700F2AF08 /* Sources */,
 				490692921A2BD6C700F2AF08 /* Frameworks */,
@@ -191,9 +193,9 @@
 			dependencies = (
 				490692971A2BD6C700F2AF08 /* PBXTargetDependency */,
 			);
-			name = OpenGLIntroDynamicHillsTests;
+			name = OpenGLIntroColorScreenTests;
 			productName = OpenGLIntroSingleTriangleTests;
-			productReference = 490692951A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests.xctest */;
+			productReference = 490692951A2BD6C700F2AF08 /* OpenGLIntroColorScreenTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 490692771A2BD6C700F2AF08 /* Build configuration list for PBXProject "OpenGLIntroDynamicHills" */;
+			buildConfigurationList = 490692771A2BD6C700F2AF08 /* Build configuration list for PBXProject "OpenGLIntroColorScreen" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -227,8 +229,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4906927B1A2BD6C700F2AF08 /* OpenGLIntroDynamicHills */,
-				490692941A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests */,
+				4906927B1A2BD6C700F2AF08 /* OpenGLIntroColorScreen */,
+				490692941A2BD6C700F2AF08 /* OpenGLIntroColorScreenTests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,12 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4963B2021A53521E002C46C1 /* Square.m in Sources */,
 				490692881A2BD6C700F2AF08 /* ViewController.m in Sources */,
 				490692851A2BD6C700F2AF08 /* AppDelegate.m in Sources */,
 				490692821A2BD6C700F2AF08 /* main.m in Sources */,
-				4963B2071A5360F3002C46C1 /* Terrain.m in Sources */,
 				490692AB1A2BD74600F2AF08 /* BaseEffect.m in Sources */,
-				493C1F3E1A353E8C006D775A /* RainbowColor.m in Sources */,
+				4963B1FE1A533972002C46C1 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4906929C1A2BD6C700F2AF08 /* OpenGLIntroDynamicHillsTests.m in Sources */,
+				4906929C1A2BD6C700F2AF08 /* OpenGLIntroColorScreenTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +284,7 @@
 /* Begin PBXTargetDependency section */
 		490692971A2BD6C700F2AF08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4906927B1A2BD6C700F2AF08 /* OpenGLIntroDynamicHills */;
+			target = 4906927B1A2BD6C700F2AF08 /* OpenGLIntroColorScreen */;
 			targetProxy = 490692961A2BD6C700F2AF08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -341,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = OpenGLIntroDynamicHills/Info.plist;
+				INFOPLIST_FILE = OpenGLIntroColorScreen/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -377,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = OpenGLIntroDynamicHills/Info.plist;
+				INFOPLIST_FILE = OpenGLIntroColorScreen/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -389,7 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/OpenGLIntroDynamicHills/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/OpenGLIntroColorScreen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -399,7 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/OpenGLIntroDynamicHills/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/OpenGLIntroColorScreen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -417,10 +419,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = OpenGLIntroDynamicHillsTests/Info.plist;
+				INFOPLIST_FILE = OpenGLIntroColorScreenTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLIntroDynamicHills.app/OpenGLIntroDynamicHills";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLIntroColorScreen.app/OpenGLIntroColorScreen";
 			};
 			name = Debug;
 		};
@@ -432,17 +434,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = OpenGLIntroDynamicHillsTests/Info.plist;
+				INFOPLIST_FILE = OpenGLIntroColorScreenTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLIntroDynamicHills.app/OpenGLIntroDynamicHills";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLIntroColorScreen.app/OpenGLIntroColorScreen";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		490692771A2BD6C700F2AF08 /* Build configuration list for PBXProject "OpenGLIntroDynamicHills" */ = {
+		490692771A2BD6C700F2AF08 /* Build configuration list for PBXProject "OpenGLIntroColorScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4906929D1A2BD6C700F2AF08 /* Debug */,
@@ -451,7 +453,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4906929F1A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroDynamicHills" */ = {
+		4906929F1A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroColorScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				490692A01A2BD6C700F2AF08 /* Debug */,
@@ -460,7 +462,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		490692A21A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroDynamicHillsTests" */ = {
+		490692A21A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroColorScreenTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				490692A31A2BD6C700F2AF08 /* Debug */,
