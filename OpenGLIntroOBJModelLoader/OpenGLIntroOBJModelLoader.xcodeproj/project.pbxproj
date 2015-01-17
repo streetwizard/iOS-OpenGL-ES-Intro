@@ -15,13 +15,22 @@
 		490692901A2BD6C700F2AF08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4906928E1A2BD6C700F2AF08 /* LaunchScreen.xib */; };
 		4906929C1A2BD6C700F2AF08 /* OpenGLIntroOBJModelLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4906929B1A2BD6C700F2AF08 /* OpenGLIntroOBJModelLoaderTests.m */; };
 		490692AB1A2BD74600F2AF08 /* BaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 490692A71A2BD74600F2AF08 /* BaseEffect.m */; };
-		490692AC1A2BD74600F2AF08 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 490692A81A2BD74600F2AF08 /* SimpleFragment.glsl */; };
-		490692AD1A2BD74600F2AF08 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 490692A91A2BD74600F2AF08 /* SimpleVertex.glsl */; };
-		4963B2021A53521E002C46C1 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 4963B2011A53521E002C46C1 /* Square.m */; };
+		490692AC1A2BD74600F2AF08 /* FragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 490692A81A2BD74600F2AF08 /* FragmentShader.glsl */; };
+		490692AD1A2BD74600F2AF08 /* VertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 490692A91A2BD74600F2AF08 /* VertexShader.glsl */; };
+		495CFBB61A66E6BC00B50A51 /* Mushroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CFBB41A66E6BC00B50A51 /* Mushroom.m */; };
+		495CFBB71A66E6BC00B50A51 /* mushroom_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 495CFBB51A66E6BC00B50A51 /* mushroom_1024x1024.png */; };
 		498C41A91A574FD2003C6F7B /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C41A81A574FD2003C6F7B /* Model.m */; };
+		49D74A3D1A69CE190057A0DC /* Vector3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D74A3C1A69CE190057A0DC /* Vector3D.m */; };
+		49D74A401A69CEC10057A0DC /* Vector2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D74A3F1A69CEC10057A0DC /* Vector2D.m */; };
+		49D74A431A69D0280057A0DC /* Material.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D74A421A69D0280057A0DC /* Material.m */; };
+		49D74A461A69D0B70057A0DC /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D74A451A69D0B70057A0DC /* Color.m */; };
+		49D74A491A69D4900057A0DC /* OBJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D74A481A69D4900057A0DC /* OBJModel.m */; };
+		49D74A4C1A69D8A50057A0DC /* OBJModelPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D74A4B1A69D8A50057A0DC /* OBJModelPart.m */; };
+		49D74A541A69E5C20057A0DC /* Mushroom.obj in Resources */ = {isa = PBXBuildFile; fileRef = 49D74A511A69E5C20057A0DC /* Mushroom.obj */; };
+		49D74A551A69E5C20057A0DC /* Mushroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D74A521A69E5C20057A0DC /* Mushroom.png */; };
+		49D74A561A69E5C20057A0DC /* Mushroom.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 49D74A531A69E5C20057A0DC /* Mushroom.mtl */; };
 		49DBB4B81A5DBB5300D2E588 /* dungeon_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 49DBB4B61A5DBB5300D2E588 /* dungeon_128x128.png */; };
 		49DBB4B91A5DBB5300D2E588 /* razewarelogo_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 49DBB4B71A5DBB5300D2E588 /* razewarelogo_128x128.png */; };
-		49E17FE81A5764F20056B122 /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E17FE71A5764F20056B122 /* Cube.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,17 +59,31 @@
 		4906929B1A2BD6C700F2AF08 /* OpenGLIntroOBJModelLoaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLIntroOBJModelLoaderTests.m; sourceTree = "<group>"; };
 		490692A61A2BD74600F2AF08 /* BaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEffect.h; sourceTree = "<group>"; };
 		490692A71A2BD74600F2AF08 /* BaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEffect.m; sourceTree = "<group>"; };
-		490692A81A2BD74600F2AF08 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
-		490692A91A2BD74600F2AF08 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
-		4963B2001A53521E002C46C1 /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
-		4963B2011A53521E002C46C1 /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		490692A81A2BD74600F2AF08 /* FragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FragmentShader.glsl; sourceTree = "<group>"; };
+		490692A91A2BD74600F2AF08 /* VertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VertexShader.glsl; sourceTree = "<group>"; };
+		495CFBB31A66E6BC00B50A51 /* Mushroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mushroom.h; sourceTree = "<group>"; };
+		495CFBB41A66E6BC00B50A51 /* Mushroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mushroom.m; sourceTree = "<group>"; };
+		495CFBB51A66E6BC00B50A51 /* mushroom_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mushroom_1024x1024.png; sourceTree = "<group>"; };
 		4963B2031A535DE0002C46C1 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		498C41A71A574FD2003C6F7B /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		498C41A81A574FD2003C6F7B /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		49D74A3B1A69CE190057A0DC /* Vector3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3D.h; sourceTree = "<group>"; };
+		49D74A3C1A69CE190057A0DC /* Vector3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vector3D.m; sourceTree = "<group>"; };
+		49D74A3E1A69CEC10057A0DC /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
+		49D74A3F1A69CEC10057A0DC /* Vector2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vector2D.m; sourceTree = "<group>"; };
+		49D74A411A69D0280057A0DC /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Material.h; sourceTree = "<group>"; };
+		49D74A421A69D0280057A0DC /* Material.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Material.m; sourceTree = "<group>"; };
+		49D74A441A69D0B70057A0DC /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		49D74A451A69D0B70057A0DC /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
+		49D74A471A69D4900057A0DC /* OBJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJModel.h; sourceTree = "<group>"; };
+		49D74A481A69D4900057A0DC /* OBJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJModel.m; sourceTree = "<group>"; };
+		49D74A4A1A69D8A50057A0DC /* OBJModelPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJModelPart.h; sourceTree = "<group>"; };
+		49D74A4B1A69D8A50057A0DC /* OBJModelPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJModelPart.m; sourceTree = "<group>"; };
+		49D74A511A69E5C20057A0DC /* Mushroom.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mushroom.obj; sourceTree = "<group>"; };
+		49D74A521A69E5C20057A0DC /* Mushroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mushroom.png; sourceTree = "<group>"; };
+		49D74A531A69E5C20057A0DC /* Mushroom.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mushroom.mtl; sourceTree = "<group>"; };
 		49DBB4B61A5DBB5300D2E588 /* dungeon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon_128x128.png; sourceTree = "<group>"; };
 		49DBB4B71A5DBB5300D2E588 /* razewarelogo_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = razewarelogo_128x128.png; sourceTree = "<group>"; };
-		49E17FE61A5764F20056B122 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
-		49E17FE71A5764F20056B122 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +125,8 @@
 		4906927E1A2BD6C700F2AF08 /* OpenGLIntroOBJModelLoader */ = {
 			isa = PBXGroup;
 			children = (
+				49D74A4F1A69E55D0057A0DC /* 3DModelsResources */,
+				495CFBB51A66E6BC00B50A51 /* mushroom_1024x1024.png */,
 				49DBB4B61A5DBB5300D2E588 /* dungeon_128x128.png */,
 				49DBB4B71A5DBB5300D2E588 /* razewarelogo_128x128.png */,
 				4963B1FF1A5351F8002C46C1 /* Model */,
@@ -149,8 +174,8 @@
 			children = (
 				490692A61A2BD74600F2AF08 /* BaseEffect.h */,
 				490692A71A2BD74600F2AF08 /* BaseEffect.m */,
-				490692A81A2BD74600F2AF08 /* SimpleFragment.glsl */,
-				490692A91A2BD74600F2AF08 /* SimpleVertex.glsl */,
+				490692A81A2BD74600F2AF08 /* FragmentShader.glsl */,
+				490692A91A2BD74600F2AF08 /* VertexShader.glsl */,
 				4963B2031A535DE0002C46C1 /* Vertex.h */,
 			);
 			path = Resources;
@@ -159,16 +184,52 @@
 		4963B1FF1A5351F8002C46C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				49D74A3A1A69CC760057A0DC /* Wavefront OBJ */,
+				495CFBB31A66E6BC00B50A51 /* Mushroom.h */,
+				495CFBB41A66E6BC00B50A51 /* Mushroom.m */,
 				498C41A71A574FD2003C6F7B /* Model.h */,
 				498C41A81A574FD2003C6F7B /* Model.m */,
-				4963B2001A53521E002C46C1 /* Square.h */,
-				4963B2011A53521E002C46C1 /* Square.m */,
-				49E17FE61A5764F20056B122 /* Cube.h */,
-				49E17FE71A5764F20056B122 /* Cube.m */,
 			);
 			name = Model;
-			path = "/Users/Streetwizard/Documents/WizArt Interactive Workspace/OpenGL ES Intro/OpenGLIntroDynamicLightingCube/OpenGLIntroDynamicLightingCube";
+			path = "/Users/Streetwizard/Documents/WizArt Interactive Workspace/OpenGL ES Intro/OpenGLIntroOBJModelLoader/OpenGLIntroOBJModelLoader";
 			sourceTree = "<absolute>";
+		};
+		49D74A3A1A69CC760057A0DC /* Wavefront OBJ */ = {
+			isa = PBXGroup;
+			children = (
+				49D74A3B1A69CE190057A0DC /* Vector3D.h */,
+				49D74A3C1A69CE190057A0DC /* Vector3D.m */,
+				49D74A3E1A69CEC10057A0DC /* Vector2D.h */,
+				49D74A3F1A69CEC10057A0DC /* Vector2D.m */,
+				49D74A411A69D0280057A0DC /* Material.h */,
+				49D74A421A69D0280057A0DC /* Material.m */,
+				49D74A441A69D0B70057A0DC /* Color.h */,
+				49D74A451A69D0B70057A0DC /* Color.m */,
+				49D74A471A69D4900057A0DC /* OBJModel.h */,
+				49D74A481A69D4900057A0DC /* OBJModel.m */,
+				49D74A4A1A69D8A50057A0DC /* OBJModelPart.h */,
+				49D74A4B1A69D8A50057A0DC /* OBJModelPart.m */,
+			);
+			name = "Wavefront OBJ";
+			sourceTree = "<group>";
+		};
+		49D74A4F1A69E55D0057A0DC /* 3DModelsResources */ = {
+			isa = PBXGroup;
+			children = (
+				49D74A501A69E57F0057A0DC /* Mushroom */,
+			);
+			name = 3DModelsResources;
+			sourceTree = "<group>";
+		};
+		49D74A501A69E57F0057A0DC /* Mushroom */ = {
+			isa = PBXGroup;
+			children = (
+				49D74A511A69E5C20057A0DC /* Mushroom.obj */,
+				49D74A521A69E5C20057A0DC /* Mushroom.png */,
+				49D74A531A69E5C20057A0DC /* Mushroom.mtl */,
+			);
+			name = Mushroom;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -251,12 +312,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4906928B1A2BD6C700F2AF08 /* Main.storyboard in Resources */,
-				490692AC1A2BD74600F2AF08 /* SimpleFragment.glsl in Resources */,
-				490692AD1A2BD74600F2AF08 /* SimpleVertex.glsl in Resources */,
+				49D74A551A69E5C20057A0DC /* Mushroom.png in Resources */,
+				49D74A561A69E5C20057A0DC /* Mushroom.mtl in Resources */,
+				495CFBB71A66E6BC00B50A51 /* mushroom_1024x1024.png in Resources */,
+				490692AC1A2BD74600F2AF08 /* FragmentShader.glsl in Resources */,
+				490692AD1A2BD74600F2AF08 /* VertexShader.glsl in Resources */,
 				490692901A2BD6C700F2AF08 /* LaunchScreen.xib in Resources */,
 				49DBB4B91A5DBB5300D2E588 /* razewarelogo_128x128.png in Resources */,
 				4906928D1A2BD6C700F2AF08 /* Images.xcassets in Resources */,
 				49DBB4B81A5DBB5300D2E588 /* dungeon_128x128.png in Resources */,
+				49D74A541A69E5C20057A0DC /* Mushroom.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,13 +339,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4963B2021A53521E002C46C1 /* Square.m in Sources */,
+				49D74A491A69D4900057A0DC /* OBJModel.m in Sources */,
+				49D74A4C1A69D8A50057A0DC /* OBJModelPart.m in Sources */,
 				490692881A2BD6C700F2AF08 /* ViewController.m in Sources */,
+				49D74A3D1A69CE190057A0DC /* Vector3D.m in Sources */,
 				490692851A2BD6C700F2AF08 /* AppDelegate.m in Sources */,
 				498C41A91A574FD2003C6F7B /* Model.m in Sources */,
 				490692821A2BD6C700F2AF08 /* main.m in Sources */,
 				490692AB1A2BD74600F2AF08 /* BaseEffect.m in Sources */,
-				49E17FE81A5764F20056B122 /* Cube.m in Sources */,
+				49D74A431A69D0280057A0DC /* Material.m in Sources */,
+				49D74A461A69D0B70057A0DC /* Color.m in Sources */,
+				49D74A401A69CEC10057A0DC /* Vector2D.m in Sources */,
+				495CFBB61A66E6BC00B50A51 /* Mushroom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

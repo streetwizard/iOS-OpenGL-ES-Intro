@@ -9,30 +9,28 @@
 #import "ViewController.h"
 #import "Vertex.h"
 #import "BaseEffect.h"
-//#import "Square.h"
-#import "Cube.h"
+#import "Mushroom.h"
 
 @interface ViewController ()
-
-@property (weak, nonatomic) IBOutlet UISlider *lightingPositionXSlider;
-@property (weak, nonatomic) IBOutlet UISlider *lightingPositionYSlider;
-@property (weak, nonatomic) IBOutlet UISlider *lightingPositionZSlider;
-
 @end
 
 @implementation ViewController
 {
-    BaseEffect* _shader;
-    //Square* _square;
-    Cube* _cube;
+    BaseEffect *_shader;
+    
+    Mushroom *_mushroom;
+    Model *_mushroomOBJ;
 }
 
 - (void)setupScene
 {
-    _shader = [[BaseEffect alloc] initWithVertexShader:@"SimpleVertex.glsl" fragmentShader:@"SimpleFragment.glsl"];
-    //_square = [[Square alloc]initWithShader:_shader];
-    _cube = [[Cube alloc]initWithShader:_shader];
-    _shader.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(85.0), self.view.bounds.size.width / self.view.bounds.size.height, 1, 150);
+    _shader = [[BaseEffect alloc] initWithVertexShader:@"VertexShader.glsl" fragmentShader:@"FragmentShader.glsl"];
+    [_shader setProjectionMatrix:GLKMatrix4MakePerspective(GLKMathDegreesToRadians(85.0), self.view.bounds.size.width / self.view.bounds.size.height, 1, 150)];
+    
+    _mushroom = [[Mushroom alloc]initWithShader:_shader];
+    [_mushroom setTranslation:GLKVector3Make(0.0f, -1.0f, 0.0f)];
+    
+    _mushroomOBJ = [[Model alloc]initWithOBJFile:@"Mushroom.obj" MTLfile:@"Mushroom.mtl"];
 }
 
 - (void)viewDidLoad
@@ -59,42 +57,12 @@
     GLKMatrix4 viewMatrix = GLKMatrix4MakeTranslation(0.0, 0.0f, -5.0f);
     viewMatrix = GLKMatrix4Rotate(viewMatrix, GLKMathDegreesToRadians(20), 1, 0, 0);
     
-    //[_square renderModelWithParentModelViewMatrix:viewMatrix];
-    [_cube renderModelWithParentModelViewMatrix:viewMatrix];
+    //[_mushroom renderModelWithParentModelViewMatrix:viewMatrix];
 }
 
 - (void)update
 {
-    //[_square updateWithDelta:self.timeSinceLastUpdate];
-    [_cube updateWithDelta:self.timeSinceLastUpdate];
+    //[_mushroom updateWithDelta:[self timeSinceLastUpdate]];
 }
-
-- (IBAction)positionSliderValueChanged:(UISlider *)sender
-{
-    GLKVector3 ambientLightingPosition = GLKVector3Make(self.lightingPositionXSlider.value, self.lightingPositionYSlider.value, self.lightingPositionZSlider.value);
-    _shader.diffuseLightingDirection = ambientLightingPosition;
-}
-
-- (IBAction)ambientLightingIntensitySliderValueChanged:(UISlider *)sender
-{
-    _shader.ambientLightingIntensity = sender.value;
-}
-
-- (IBAction)diffuseLightingIntensitySliderValueChanged:(UISlider *)sender
-{
-    _shader.diffuseLightingIntensity = sender.value;
-}
-
-- (IBAction)materialSpecularLightingIntensitySliderValueChanged:(UISlider *)sender
-{
-    _shader.materialSpecularLightingIntensity = sender.value;
-}
-
-- (IBAction)specularLightingShininessSliderValueChanged:(UISlider *)sender
-{
-    _shader.specularLightingShininess = sender.value;
-}
-
-
 
 @end

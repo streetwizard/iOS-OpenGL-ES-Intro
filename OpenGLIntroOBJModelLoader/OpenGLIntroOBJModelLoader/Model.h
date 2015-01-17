@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BaseEffect.h"
 #import "Vertex.h"
+#import "OBJModel.h"
 
 @interface Model : NSObject
 
@@ -25,14 +26,24 @@
 
 @property (nonatomic, assign) GLuint texture;
 
+@property (nonatomic, assign) GLKVector3 ambientLightingColor;
+@property (nonatomic, assign) GLKVector3 diffuseLightingColor;
+@property (nonatomic, assign) GLKVector3 specularLightingColor;
+
+@property (nonatomic, assign) float materialShininess;
+
 -(instancetype)initWithName:(char *)name
                      shader:(BaseEffect *)shader
                    vertices:(Vertex *)vertices
-                vertexCount:(unsigned int)vertexCount
-                    indices:(GLubyte *)indices
-                 indexCount:(unsigned int)indexCount;
+                vertexCount:(unsigned int)vertexCount;
+
+-(instancetype)initWithOBJFile:(NSString*)objFileName
+                       MTLfile:(NSString*)mtlFileName;
+
 - (void)updateWithDelta:(NSTimeInterval)delta;
 - (void)renderModelWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix;
 - (void)loadTexture:(NSString *)textureFileName;
+
+
 
 @end

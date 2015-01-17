@@ -20,13 +20,10 @@
 @property (nonatomic, assign) GLuint texture;
 
 @property (nonatomic, assign) GLKVector3 ambientLightingColor;
-@property (nonatomic, assign) GLfloat ambientLightingIntensity;
+@property (nonatomic, assign) GLKVector3 diffuseLightingColor;
+@property (nonatomic, assign) GLKVector3 specularLightingColor;
 
-@property (nonatomic, assign) GLKVector3 diffuseLightingDirection;
-@property (nonatomic, assign) GLfloat diffuseLightingIntensity;
-
-@property (nonatomic, assign) GLfloat materialSpecularLightingIntensity;
-@property (nonatomic, assign) float specularLightingShininess;
+@property (nonatomic, assign) float materialShininess;
 
 - (id)initWithVertexShader:(NSString *)vertexShader
             fragmentShader:(NSString *)fragmentShader;
