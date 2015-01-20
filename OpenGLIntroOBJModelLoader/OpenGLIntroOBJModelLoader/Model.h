@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BaseEffect.h"
 #import "Vertex.h"
-#import "OBJModel.h"
+#import "OBJModelParser.h"
 
 @interface Model : NSObject
 
@@ -36,9 +36,6 @@
                      shader:(BaseEffect *)shader
                    vertices:(Vertex *)vertices
                 vertexCount:(unsigned int)vertexCount;
-
--(instancetype)initWithOBJFile:(NSString*)objFileName
-                       MTLfile:(NSString*)mtlFileName;
 
 - (void)updateWithDelta:(NSTimeInterval)delta;
 - (void)renderModelWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix;

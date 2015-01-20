@@ -17,6 +17,9 @@
 		490692AB1A2BD74600F2AF08 /* BaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 490692A71A2BD74600F2AF08 /* BaseEffect.m */; };
 		490692AC1A2BD74600F2AF08 /* FragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 490692A81A2BD74600F2AF08 /* FragmentShader.glsl */; };
 		490692AD1A2BD74600F2AF08 /* VertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 490692A91A2BD74600F2AF08 /* VertexShader.glsl */; };
+		495371ED1A6D5E7A0005C606 /* OBJModelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 495371EC1A6D5E7A0005C606 /* OBJModelParser.m */; };
+		495371F01A6D7A8C0005C606 /* VertexDataIndices.m in Sources */ = {isa = PBXBuildFile; fileRef = 495371EF1A6D7A8C0005C606 /* VertexDataIndices.m */; };
+		495371F31A6D99BA0005C606 /* Model3DOBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 495371F21A6D99BA0005C606 /* Model3DOBJ.m */; };
 		495CFBB61A66E6BC00B50A51 /* Mushroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CFBB41A66E6BC00B50A51 /* Mushroom.m */; };
 		495CFBB71A66E6BC00B50A51 /* mushroom_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 495CFBB51A66E6BC00B50A51 /* mushroom_1024x1024.png */; };
 		498C41A91A574FD2003C6F7B /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 498C41A81A574FD2003C6F7B /* Model.m */; };
@@ -61,6 +64,12 @@
 		490692A71A2BD74600F2AF08 /* BaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEffect.m; sourceTree = "<group>"; };
 		490692A81A2BD74600F2AF08 /* FragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FragmentShader.glsl; sourceTree = "<group>"; };
 		490692A91A2BD74600F2AF08 /* VertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VertexShader.glsl; sourceTree = "<group>"; };
+		495371EB1A6D5E7A0005C606 /* OBJModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJModelParser.h; sourceTree = "<group>"; };
+		495371EC1A6D5E7A0005C606 /* OBJModelParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJModelParser.m; sourceTree = "<group>"; };
+		495371EE1A6D7A8C0005C606 /* VertexDataIndices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexDataIndices.h; sourceTree = "<group>"; };
+		495371EF1A6D7A8C0005C606 /* VertexDataIndices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertexDataIndices.m; sourceTree = "<group>"; };
+		495371F11A6D99BA0005C606 /* Model3DOBJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model3DOBJ.h; sourceTree = "<group>"; };
+		495371F21A6D99BA0005C606 /* Model3DOBJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model3DOBJ.m; sourceTree = "<group>"; };
 		495CFBB31A66E6BC00B50A51 /* Mushroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mushroom.h; sourceTree = "<group>"; };
 		495CFBB41A66E6BC00B50A51 /* Mushroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mushroom.m; sourceTree = "<group>"; };
 		495CFBB51A66E6BC00B50A51 /* mushroom_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mushroom_1024x1024.png; sourceTree = "<group>"; };
@@ -189,6 +198,8 @@
 				495CFBB41A66E6BC00B50A51 /* Mushroom.m */,
 				498C41A71A574FD2003C6F7B /* Model.h */,
 				498C41A81A574FD2003C6F7B /* Model.m */,
+				495371F11A6D99BA0005C606 /* Model3DOBJ.h */,
+				495371F21A6D99BA0005C606 /* Model3DOBJ.m */,
 			);
 			name = Model;
 			path = "/Users/Streetwizard/Documents/WizArt Interactive Workspace/OpenGL ES Intro/OpenGLIntroOBJModelLoader/OpenGLIntroOBJModelLoader";
@@ -209,6 +220,10 @@
 				49D74A481A69D4900057A0DC /* OBJModel.m */,
 				49D74A4A1A69D8A50057A0DC /* OBJModelPart.h */,
 				49D74A4B1A69D8A50057A0DC /* OBJModelPart.m */,
+				495371EB1A6D5E7A0005C606 /* OBJModelParser.h */,
+				495371EC1A6D5E7A0005C606 /* OBJModelParser.m */,
+				495371EE1A6D7A8C0005C606 /* VertexDataIndices.h */,
+				495371EF1A6D7A8C0005C606 /* VertexDataIndices.m */,
 			);
 			name = "Wavefront OBJ";
 			sourceTree = "<group>";
@@ -344,9 +359,12 @@
 				490692881A2BD6C700F2AF08 /* ViewController.m in Sources */,
 				49D74A3D1A69CE190057A0DC /* Vector3D.m in Sources */,
 				490692851A2BD6C700F2AF08 /* AppDelegate.m in Sources */,
+				495371F01A6D7A8C0005C606 /* VertexDataIndices.m in Sources */,
+				495371ED1A6D5E7A0005C606 /* OBJModelParser.m in Sources */,
 				498C41A91A574FD2003C6F7B /* Model.m in Sources */,
 				490692821A2BD6C700F2AF08 /* main.m in Sources */,
 				490692AB1A2BD74600F2AF08 /* BaseEffect.m in Sources */,
+				495371F31A6D99BA0005C606 /* Model3DOBJ.m in Sources */,
 				49D74A431A69D0280057A0DC /* Material.m in Sources */,
 				49D74A461A69D0B70057A0DC /* Color.m in Sources */,
 				49D74A401A69CEC10057A0DC /* Vector2D.m in Sources */,

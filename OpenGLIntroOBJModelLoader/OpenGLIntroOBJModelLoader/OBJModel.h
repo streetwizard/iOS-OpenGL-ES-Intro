@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Material.h"
 
 @interface OBJModel : NSObject
 
@@ -18,9 +17,14 @@
 @property (nonatomic, strong) NSMutableArray *normals;
 @property (nonatomic, strong) NSMutableArray *objModelParts;
 
-@property (nonatomic, strong) NSMutableDictionary *materials;
-
--(instancetype)initWithOBJFile:(NSString*)objFileName
-                       MTLfile:(NSString*)mtlFileName;
+-(instancetype)initWithName:(NSString*)name
+                    vertices:(NSMutableArray*)vertices
+          textureCoordinates:(NSMutableArray*)textureCoordinates
+                     normals:(NSMutableArray*)normals;
+-(instancetype)initWithName:(NSString*)name
+                    vertices:(NSMutableArray*)vertices
+          textureCoordinates:(NSMutableArray*)textureCoordinates
+                     normals:(NSMutableArray*)normals
+               objModelParts:(NSMutableArray*)objModelParts;
 
 @end

@@ -10,6 +10,17 @@
 
 @implementation OBJModelPart
 
+-(instancetype)init
+{
+    if((self = [super init]))
+    {
+        self.material = nil;
+        self.faces = [NSMutableArray array];
+    }
+    
+    return self;
+}
+
 -(instancetype)initWithFaces:(NSMutableArray*)faces
                     material:(Material*)material
 {

@@ -77,10 +77,6 @@
 {
     if((self = [super init]))
     {
-        OBJModel *objModel = [[OBJModel alloc]initWithOBJFile:objFileName
-                                                      MTLfile:mtlFileName];
-        
-        
     }
     
     return self;
@@ -141,7 +137,6 @@
     {
         NSLog(@"Error loading texture file: %@", error.localizedDescription);
     }
-    
 }
 
 @end
