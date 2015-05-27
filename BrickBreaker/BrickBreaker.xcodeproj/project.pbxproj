@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49028CFD1A6F1C1000F4492B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49028CE11A6F1C1000F4492B /* AppDelegate.m */; };
+		49028CFE1A6F1C1000F4492B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49028CE31A6F1C1000F4492B /* ViewController.m */; };
+		49028CFF1A6F1C1000F4492B /* dungeon_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 49028CE61A6F1C1000F4492B /* dungeon_128x128.png */; };
+		49028D001A6F1C1000F4492B /* razewarelogo_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 49028CE71A6F1C1000F4492B /* razewarelogo_128x128.png */; };
+		49028D011A6F1C1000F4492B /* mushroom_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 49028CE91A6F1C1000F4492B /* mushroom_1024x1024.png */; };
+		49028D021A6F1C1000F4492B /* sword_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 49028CEB1A6F1C1000F4492B /* sword_1024x1024.png */; };
+		49028D031A6F1C1000F4492B /* tree_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 49028CED1A6F1C1000F4492B /* tree_1024x1024.png */; };
+		49028D041A6F1C1000F4492B /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 49028CF01A6F1C1000F4492B /* Model.m */; };
+		49028D051A6F1C1000F4492B /* Mushroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 49028CF21A6F1C1000F4492B /* Mushroom.m */; };
+		49028D061A6F1C1000F4492B /* Sword.m in Sources */ = {isa = PBXBuildFile; fileRef = 49028CF41A6F1C1000F4492B /* Sword.m */; };
+		49028D071A6F1C1000F4492B /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 49028CF61A6F1C1000F4492B /* Tree.m */; };
+		49028D081A6F1C1000F4492B /* BaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 49028CF91A6F1C1000F4492B /* BaseEffect.m */; };
+		49028D091A6F1C1000F4492B /* FragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 49028CFA1A6F1C1000F4492B /* FragmentShader.glsl */; };
+		49028D0A1A6F1C1000F4492B /* VertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 49028CFC1A6F1C1000F4492B /* VertexShader.glsl */; };
+		490692821A2BD6C700F2AF08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 490692811A2BD6C700F2AF08 /* main.m */; };
+		4906928B1A2BD6C700F2AF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490692891A2BD6C700F2AF08 /* Main.storyboard */; };
+		4906928D1A2BD6C700F2AF08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4906928C1A2BD6C700F2AF08 /* Images.xcassets */; };
+		490692901A2BD6C700F2AF08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4906928E1A2BD6C700F2AF08 /* LaunchScreen.xib */; };
+		4906929C1A2BD6C700F2AF08 /* BrickBreakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4906929B1A2BD6C700F2AF08 /* BrickBreakerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		490692961A2BD6C700F2AF08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 490692741A2BD6C700F2AF08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4906927B1A2BD6C700F2AF08;
+			remoteInfo = OpenGLIntroSingleTriangle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49028CE01A6F1C1000F4492B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49028CE11A6F1C1000F4492B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49028CE21A6F1C1000F4492B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		49028CE31A6F1C1000F4492B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		49028CE61A6F1C1000F4492B /* dungeon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon_128x128.png; sourceTree = "<group>"; };
+		49028CE71A6F1C1000F4492B /* razewarelogo_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = razewarelogo_128x128.png; sourceTree = "<group>"; };
+		49028CE91A6F1C1000F4492B /* mushroom_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mushroom_1024x1024.png; sourceTree = "<group>"; };
+		49028CEB1A6F1C1000F4492B /* sword_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sword_1024x1024.png; sourceTree = "<group>"; };
+		49028CED1A6F1C1000F4492B /* tree_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree_1024x1024.png; sourceTree = "<group>"; };
+		49028CEF1A6F1C1000F4492B /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		49028CF01A6F1C1000F4492B /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		49028CF11A6F1C1000F4492B /* Mushroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mushroom.h; sourceTree = "<group>"; };
+		49028CF21A6F1C1000F4492B /* Mushroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mushroom.m; sourceTree = "<group>"; };
+		49028CF31A6F1C1000F4492B /* Sword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sword.h; sourceTree = "<group>"; };
+		49028CF41A6F1C1000F4492B /* Sword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sword.m; sourceTree = "<group>"; };
+		49028CF51A6F1C1000F4492B /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		49028CF61A6F1C1000F4492B /* Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
+		49028CF81A6F1C1000F4492B /* BaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEffect.h; sourceTree = "<group>"; };
+		49028CF91A6F1C1000F4492B /* BaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEffect.m; sourceTree = "<group>"; };
+		49028CFA1A6F1C1000F4492B /* FragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FragmentShader.glsl; sourceTree = "<group>"; };
+		49028CFB1A6F1C1000F4492B /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		49028CFC1A6F1C1000F4492B /* VertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VertexShader.glsl; sourceTree = "<group>"; };
+		4906927C1A2BD6C700F2AF08 /* OpenGLIntroModelLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLIntroModelLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		490692801A2BD6C700F2AF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490692811A2BD6C700F2AF08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4906928A1A2BD6C700F2AF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4906928C1A2BD6C700F2AF08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4906928F1A2BD6C700F2AF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		490692951A2BD6C700F2AF08 /* OpenGLIntroModelLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLIntroModelLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4906929A1A2BD6C700F2AF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4906929B1A2BD6C700F2AF08 /* BrickBreakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrickBreakerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		490692791A2BD6C700F2AF08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490692921A2BD6C700F2AF08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49028CDF1A6F1C1000F4492B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				49028CE01A6F1C1000F4492B /* AppDelegate.h */,
+				49028CE11A6F1C1000F4492B /* AppDelegate.m */,
+				49028CE21A6F1C1000F4492B /* ViewController.h */,
+				49028CE31A6F1C1000F4492B /* ViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		49028CE41A6F1C1000F4492B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49028CE51A6F1C1000F4492B /* Cube */,
+				49028CE81A6F1C1000F4492B /* Mushroom */,
+				49028CEA1A6F1C1000F4492B /* Sword */,
+				49028CEC1A6F1C1000F4492B /* Tree */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49028CE51A6F1C1000F4492B /* Cube */ = {
+			isa = PBXGroup;
+			children = (
+				49028CE61A6F1C1000F4492B /* dungeon_128x128.png */,
+				49028CE71A6F1C1000F4492B /* razewarelogo_128x128.png */,
+			);
+			path = Cube;
+			sourceTree = "<group>";
+		};
+		49028CE81A6F1C1000F4492B /* Mushroom */ = {
+			isa = PBXGroup;
+			children = (
+				49028CE91A6F1C1000F4492B /* mushroom_1024x1024.png */,
+			);
+			path = Mushroom;
+			sourceTree = "<group>";
+		};
+		49028CEA1A6F1C1000F4492B /* Sword */ = {
+			isa = PBXGroup;
+			children = (
+				49028CEB1A6F1C1000F4492B /* sword_1024x1024.png */,
+			);
+			path = Sword;
+			sourceTree = "<group>";
+		};
+		49028CEC1A6F1C1000F4492B /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				49028CED1A6F1C1000F4492B /* tree_1024x1024.png */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		49028CEE1A6F1C1000F4492B /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				49028CEF1A6F1C1000F4492B /* Model.h */,
+				49028CF01A6F1C1000F4492B /* Model.m */,
+				49028CF11A6F1C1000F4492B /* Mushroom.h */,
+				49028CF21A6F1C1000F4492B /* Mushroom.m */,
+				49028CF31A6F1C1000F4492B /* Sword.h */,
+				49028CF41A6F1C1000F4492B /* Sword.m */,
+				49028CF51A6F1C1000F4492B /* Tree.h */,
+				49028CF61A6F1C1000F4492B /* Tree.m */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		49028CF71A6F1C1000F4492B /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				49028CF81A6F1C1000F4492B /* BaseEffect.h */,
+				49028CF91A6F1C1000F4492B /* BaseEffect.m */,
+				49028CFA1A6F1C1000F4492B /* FragmentShader.glsl */,
+				49028CFB1A6F1C1000F4492B /* Vertex.h */,
+				49028CFC1A6F1C1000F4492B /* VertexShader.glsl */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		490692731A2BD6C700F2AF08 = {
+			isa = PBXGroup;
+			children = (
+				4906927E1A2BD6C700F2AF08 /* BrickBreaker */,
+				490692981A2BD6C700F2AF08 /* BrickBreakerTests */,
+				4906927D1A2BD6C700F2AF08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4906927D1A2BD6C700F2AF08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4906927C1A2BD6C700F2AF08 /* OpenGLIntroModelLoader.app */,
+				490692951A2BD6C700F2AF08 /* OpenGLIntroModelLoaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4906927E1A2BD6C700F2AF08 /* BrickBreaker */ = {
+			isa = PBXGroup;
+			children = (
+				49028CDF1A6F1C1000F4492B /* Main */,
+				49028CE41A6F1C1000F4492B /* Models */,
+				49028CEE1A6F1C1000F4492B /* Nodes */,
+				49028CF71A6F1C1000F4492B /* Shaders */,
+				490692891A2BD6C700F2AF08 /* Main.storyboard */,
+				4906928C1A2BD6C700F2AF08 /* Images.xcassets */,
+				4906928E1A2BD6C700F2AF08 /* LaunchScreen.xib */,
+				4906927F1A2BD6C700F2AF08 /* Supporting Files */,
+			);
+			path = BrickBreaker;
+			sourceTree = SOURCE_ROOT;
+		};
+		4906927F1A2BD6C700F2AF08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				490692801A2BD6C700F2AF08 /* Info.plist */,
+				490692811A2BD6C700F2AF08 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		490692981A2BD6C700F2AF08 /* BrickBreakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4906929B1A2BD6C700F2AF08 /* BrickBreakerTests.m */,
+				490692991A2BD6C700F2AF08 /* Supporting Files */,
+			);
+			path = BrickBreakerTests;
+			sourceTree = "<group>";
+		};
+		490692991A2BD6C700F2AF08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4906929A1A2BD6C700F2AF08 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4906927B1A2BD6C700F2AF08 /* OpenGLIntroModelLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4906929F1A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroModelLoader" */;
+			buildPhases = (
+				490692781A2BD6C700F2AF08 /* Sources */,
+				490692791A2BD6C700F2AF08 /* Frameworks */,
+				4906927A1A2BD6C700F2AF08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLIntroModelLoader;
+			productName = OpenGLIntroSingleTriangle;
+			productReference = 4906927C1A2BD6C700F2AF08 /* OpenGLIntroModelLoader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		490692941A2BD6C700F2AF08 /* OpenGLIntroModelLoaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490692A21A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroModelLoaderTests" */;
+			buildPhases = (
+				490692911A2BD6C700F2AF08 /* Sources */,
+				490692921A2BD6C700F2AF08 /* Frameworks */,
+				490692931A2BD6C700F2AF08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				490692971A2BD6C700F2AF08 /* PBXTargetDependency */,
+			);
+			name = OpenGLIntroModelLoaderTests;
+			productName = OpenGLIntroSingleTriangleTests;
+			productReference = 490692951A2BD6C700F2AF08 /* OpenGLIntroModelLoaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		490692741A2BD6C700F2AF08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "WizArt Interactive";
+				TargetAttributes = {
+					4906927B1A2BD6C700F2AF08 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					490692941A2BD6C700F2AF08 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 4906927B1A2BD6C700F2AF08;
+					};
+				};
+			};
+			buildConfigurationList = 490692771A2BD6C700F2AF08 /* Build configuration list for PBXProject "BrickBreaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 490692731A2BD6C700F2AF08;
+			productRefGroup = 4906927D1A2BD6C700F2AF08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4906927B1A2BD6C700F2AF08 /* OpenGLIntroModelLoader */,
+				490692941A2BD6C700F2AF08 /* OpenGLIntroModelLoaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4906927A1A2BD6C700F2AF08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49028D011A6F1C1000F4492B /* mushroom_1024x1024.png in Resources */,
+				49028D091A6F1C1000F4492B /* FragmentShader.glsl in Resources */,
+				49028D0A1A6F1C1000F4492B /* VertexShader.glsl in Resources */,
+				49028D001A6F1C1000F4492B /* razewarelogo_128x128.png in Resources */,
+				49028D031A6F1C1000F4492B /* tree_1024x1024.png in Resources */,
+				4906928B1A2BD6C700F2AF08 /* Main.storyboard in Resources */,
+				490692901A2BD6C700F2AF08 /* LaunchScreen.xib in Resources */,
+				4906928D1A2BD6C700F2AF08 /* Images.xcassets in Resources */,
+				49028D021A6F1C1000F4492B /* sword_1024x1024.png in Resources */,
+				49028CFF1A6F1C1000F4492B /* dungeon_128x128.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490692931A2BD6C700F2AF08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		490692781A2BD6C700F2AF08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49028CFE1A6F1C1000F4492B /* ViewController.m in Sources */,
+				49028CFD1A6F1C1000F4492B /* AppDelegate.m in Sources */,
+				49028D051A6F1C1000F4492B /* Mushroom.m in Sources */,
+				49028D061A6F1C1000F4492B /* Sword.m in Sources */,
+				490692821A2BD6C700F2AF08 /* main.m in Sources */,
+				49028D041A6F1C1000F4492B /* Model.m in Sources */,
+				49028D071A6F1C1000F4492B /* Tree.m in Sources */,
+				49028D081A6F1C1000F4492B /* BaseEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490692911A2BD6C700F2AF08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4906929C1A2BD6C700F2AF08 /* BrickBreakerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		490692971A2BD6C700F2AF08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4906927B1A2BD6C700F2AF08 /* OpenGLIntroModelLoader */;
+			targetProxy = 490692961A2BD6C700F2AF08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		490692891A2BD6C700F2AF08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4906928A1A2BD6C700F2AF08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4906928E1A2BD6C700F2AF08 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4906928F1A2BD6C700F2AF08 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4906929D1A2BD6C700F2AF08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BrickBreaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4906929E1A2BD6C700F2AF08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BrickBreaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		490692A01A2BD6C700F2AF08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BrickBreaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		490692A11A2BD6C700F2AF08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BrickBreaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		490692A31A2BD6C700F2AF08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrickBreaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLIntroModelLoader.app/OpenGLIntroModelLoader";
+			};
+			name = Debug;
+		};
+		490692A41A2BD6C700F2AF08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrickBreaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLIntroModelLoader.app/OpenGLIntroModelLoader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		490692771A2BD6C700F2AF08 /* Build configuration list for PBXProject "BrickBreaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4906929D1A2BD6C700F2AF08 /* Debug */,
+				4906929E1A2BD6C700F2AF08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4906929F1A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroModelLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490692A01A2BD6C700F2AF08 /* Debug */,
+				490692A11A2BD6C700F2AF08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		490692A21A2BD6C700F2AF08 /* Build configuration list for PBXNativeTarget "OpenGLIntroModelLoaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490692A31A2BD6C700F2AF08 /* Debug */,
+				490692A41A2BD6C700F2AF08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 490692741A2BD6C700F2AF08 /* Project object */;
+}
